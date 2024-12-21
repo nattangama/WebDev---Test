@@ -1,0 +1,195 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header-banner {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#logo {
+    height: 40px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #293444;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 50px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar nav ul li.active a {
+    font-weight: bold;
+}
+
+.aside-footer {
+    padding: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.user-form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.user-form legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cordion-title{
+    padding: 10px 20px;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cordion-content{
+    padding: 30px;
+    background-color: #ffffff;
+}
+.cordion-content.active{
+    display: none;
+}
+.form-container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 20px;
+}
+
+.add {
+    display: none;
+}
+.active .add{
+    display: block;
+}
+
+.active .remove{
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px; 
+    height: 20px;
+}
+
+label:has(input[type = "checkbox"]:checked)  {
+    font-weight: bold;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Botões */
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 40px; /* Aumenta a largura */
+    border: none;
+    border-radius: 20px; /* Torna os botões circulares */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #00aaff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #008ecc;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #212a36; /* Cor de fundo semelhante ao design fornecido */
+    border-top: 1px solid #ddd; /* Linha acima do rodapé */
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #f0f0f0;
+
+}
